@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>984</width>
+    <height>605</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QTextEdit" name="message">
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>240</y>
+     <width>281</width>
+     <height>191</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QTextEdit{
+border: 1px solid rgb(37, 39, 48);
+border-radius: 10px;
+color: #FFF;
+padding-left: 20px;
+padding-right: 20px;
+background-color: rgb(34, 36, 44);
+
+}
+QTextEdit:hover {
+border: 2px solid rgb(48, 50, 62);
+}
+
+QTextEdit:focus {
+border: 2px solid rgb(85, 170, 255);
+background-color: rgb(43, 45, 56);
+}</string>
+   </property>
+   <property name="placeholderText">
+    <string>Description...</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="objet">
+   <property name="geometry">
+    <rect>
+     <x>180</x>
+     <y>120</y>
+     <width>201</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLineEdit{
+border: 1px solid rgb(37, 39, 48);
+border-radius: 10px;
+color: #FFF;
+padding-left: 20px;
+padding-right: 20px;
+background-color: rgb(34, 36, 44);
+
+}
+QLineEdit:hover {
+border: 2px solid rgb(48, 50, 62);
+}
+
+QLineEdit:focus {
+border: 2px solid rgb(85, 170, 255);
+background-color: rgb(43, 45, 56);
+}</string>
+   </property>
+   <property name="placeholderText">
+    <string>Objets</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="adresseMail">
+   <property name="geometry">
+    <rect>
+     <x>180</x>
+     <y>60</y>
+     <width>201</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLineEdit{
+border: 1px solid rgb(37, 39, 48);
+border-radius: 10px;
+color: #FFF;
+padding-left: 20px;
+padding-right: 20px;
+background-color: rgb(34, 36, 44);
+
+}
+QLineEdit:hover {
+border: 2px solid rgb(48, 50, 62);
+}
+
+QLineEdit:focus {
+border: 2px solid rgb(85, 170, 255);
+background-color: rgb(43, 45, 56);
+}</string>
+   </property>
+   <property name="placeholderText">
+    <string>Adresse mail du récepteur</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="pass">
+   <property name="geometry">
+    <rect>
+     <x>430</x>
+     <y>430</y>
+     <width>151</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLineEdit{
+border: 1px solid rgb(37, 39, 48);
+border-radius: 10px;
+color: #FFF;
+padding-left: 20px;
+padding-right: 20px;
+background-color: rgb(34, 36, 44);
+
+}
+QLineEdit:hover {
+border: 2px solid rgb(48, 50, 62);
+}
+
+QLineEdit:focus {
+border: 2px solid rgb(85, 170, 255);
+background-color: rgb(43, 45, 56);
+}</string>
+   </property>
+   <property name="placeholderText">
+    <string>Votre Mdp</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="browse">
+   <property name="geometry">
+    <rect>
+     <x>430</x>
+     <y>180</y>
+     <width>151</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+border: 2px solid black;
+font: 75 8pt &quot;MS Shell Dlg 2&quot;;
+border-radius: 10px;
+color: rgb(205, 231, 255);
+padding: 0 8px;
+background-color: rgb(87, 150, 212);
+font: bold, &quot;Comic Sans MS&quot;;;
+text-align:center;
+}
+
+QPushButton:hover  { 
+background-color: rgb(95, 166, 232);
+}
+
+QPushButton:pressed  { 
+background-color: rgb(82, 142, 199	);
+}
+</string>
+   </property>
+   <property name="text">
+    <string>Browse</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="file">
+   <property name="geometry">
+    <rect>
+     <x>180</x>
+     <y>180</y>
+     <width>201</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLineEdit{
+border: 1px solid rgb(37, 39, 48);
+border-radius: 10px;
+color: #FFF;
+padding-left: 20px;
+padding-right: 20px;
+background-color: rgb(34, 36, 44);
+
+}
+QLineEdit:hover {
+border: 2px solid rgb(48, 50, 62);
+}
+
+QLineEdit:focus {
+border: 2px solid rgb(85, 170, 255);
+background-color: rgb(43, 45, 56);
+}</string>
+   </property>
+   <property name="placeholderText">
+    <string>Pièces jointes</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="envoyer">
+   <property name="geometry">
+    <rect>
+     <x>430</x>
+     <y>480</y>
+     <width>161</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+border: 2px solid black;
+font: 75 8pt &quot;MS Shell Dlg 2&quot;;
+border-radius: 10px;
+color: rgb(205, 231, 255);
+padding: 0 8px;
+background-color: rgb(87, 150, 212);
+font: bold, &quot;Comic Sans MS&quot;;;
+text-align:center;
+}
+
+QPushButton:hover  { 
+background-color: rgb(95, 166, 232);
+}
+
+QPushButton:pressed  { 
+background-color: rgb(82, 142, 199	);
+}
+</string>
+   </property>
+   <property name="text">
+    <string>Envoyer</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
