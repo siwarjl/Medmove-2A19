@@ -6,6 +6,7 @@
 #include "tache.h"
 #include "stat_combo.h"
 #include "agenda.h"
+#include "chatbox.h"
 #include <QPixmap>
 #include <QDateTime>
 #include <QMessageBox>
@@ -16,11 +17,22 @@
 #include <QPrintDialog>
 #include <QFileDialog>
 #include<QDebug>
+using namespace DuarteCorporation;
 Dons::Dons(QWidget *parent) :
     QDialog(parent),
     ui(new Ui::Dons)
 {
     ui->setupUi(this);
+    int ret=A.connect_arduino(); // lancer la connexion à arduino
+    switch(ret){
+    case(0):qDebug()<< "arduino is available and connected to : "<< A.getarduino_port_name();
+        break;
+    case(1):qDebug() << "arduino is available but not connected to :" <<A.getarduino_port_name();
+       break;
+    case(-1):qDebug() << "arduino is not available";
+    }
+     QObject::connect(A.getserial(),SIGNAL(readyRead()),this,SLOT(update_label())); // permet de lancer
+     //le slot update_label suite à la reception du signal readyRead (reception des données).
     ui->dispo->setValidator(new QIntValidator(0,1, this));
     ui->dispo_2->setValidator(new QIntValidator(0,1, this));
 
@@ -211,14 +223,24 @@ void Dons::on_pushButton_10_clicked()
                      QString text=d.apercupdf();
                      ui->textEdit->setText(text);
 
+
                                        QPrinter printer ;
                                        printer.setPrinterName("imprimer");
-                                       QImage logo("C:/Users/Amine/Desktop/projet/img/logo.png");
-                                      QPoint logo_cordinates(100, 100);
-                                          painter.drawImage(logo_cordinates, logo);
-                                       QPrintDialog dialog (&printer,this);
-                                       if(dialog.exec()==QDialog::Rejected) return ;
-                                       ui->textEdit->print(&printer);
+                                                               printer.setOutputFormat(QPrinter::PdfFormat);
+                                                               printer.setOutputFileName("C:/Users/mensi/Desktop/dons.pdf");
+                                                               //printer.setFullPage(true);
+
+                                                               painter.begin(&printer);
+
+                                                              painter.drawPixmap(QRect(550, 50, 150, 150), QPixmap("C:/Users/mensi/Desktop/a.png"));
+
+                                                               // Draw the text on the page
+                                                              QTextDocument doc;
+                                                                                      doc.setHtml(text);
+                                                                                      doc.setPageSize(printer.pageRect().size());
+                                                                                      doc.drawContents(&painter);
+
+                                                                                painter.end();
 }
 
 
@@ -295,4 +317,35 @@ void Dons::on_calendarWidget_clicked(const QDate &date)
             }
 
     }
+}
+
+void Dons::on_chat_clicked()
+{
+    chatbox ch;
+      ch.exec();
+}
+/*void Dons::update_label()
+{
+    data=A.read_from_arduino();
+
+    if(data=="1")
+
+        ui->label_3->setText("ON"); // si les données reçues de arduino via la liaison série sont égales à 1
+    // alors afficher ON
+
+    else if (data=="0")
+
+        ui->label_3->setText("OFF");   // si les données reçues de arduino via la liaison série sont égales à 0
+     //alors afficher ON
+}*/
+
+void Dons::on_pushButton_16_clicked()
+{
+    A.write_to_arduino("0");  //envoyer 0 à arduino
+}
+
+void Dons::on_pushButton_15_clicked()
+{
+    A.write_to_arduino("1");   //envoyer 2 à arduino
+
 }

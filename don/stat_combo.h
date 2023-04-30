@@ -33,6 +33,9 @@ public:
     ~stat_combo();
     QChartView * chartView ;
     void choix_pie();
+private slots:
+    void on_pushButton_37_clicked();
+
 private:
     Ui::stat_combo *ui;
 

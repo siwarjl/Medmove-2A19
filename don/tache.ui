@@ -1,42 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>stat_combo</class>
- <widget class="QDialog" name="stat_combo">
+ <class>tache</class>
+ <widget class="QDialog" name="tache">
   <property name="geometry">
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>830</width>
-    <height>571</height>
+    <width>1446</width>
+    <height>693</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>Dialog</string>
   </property>
-  <widget class="QGraphicsView" name="graphicsView">
-   <property name="geometry">
-    <rect>
-     <x>260</x>
-     <y>0</y>
-     <width>501</width>
-     <height>581</height>
-    </rect>
-   </property>
-  </widget>
-  <widget class="QWidget" name="widget_3" native="true">
+  <widget class="QWidget" name="widget" native="true">
    <property name="geometry">
     <rect>
      <x>0</x>
-     <y>0</y>
-     <width>261</width>
-     <height>821</height>
+     <y>-10</y>
+     <width>251</width>
+     <height>731</height>
     </rect>
    </property>
    <property name="styleSheet">
     <string notr="true">
 background-color: rgb(163, 163, 163);</string>
    </property>
-   <widget class="QPushButton" name="pushButton_30">
+   <widget class="QPushButton" name="pushButton">
     <property name="geometry">
      <rect>
       <x>10</x>
@@ -52,7 +42,7 @@ background-color: rgb(163, 163, 163);</string>
      <string/>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton_31">
+   <widget class="QPushButton" name="pushButton_5">
     <property name="geometry">
      <rect>
       <x>70</x>
@@ -74,7 +64,7 @@ text-align:center;</string>
      <string>ACCUEIL</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton_32">
+   <widget class="QPushButton" name="pushButton_4">
     <property name="geometry">
      <rect>
       <x>10</x>
@@ -90,7 +80,7 @@ text-align:center;</string>
      <string/>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton_33">
+   <widget class="QPushButton" name="pushButton_6">
     <property name="geometry">
      <rect>
       <x>70</x>
@@ -112,7 +102,7 @@ text-align:center;</string>
      <string>TACHE</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton_34">
+   <widget class="QPushButton" name="pushButton_7">
     <property name="geometry">
      <rect>
       <x>70</x>
@@ -134,7 +124,7 @@ text-align:center;</string>
      <string>PARAMETRE</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton_35">
+   <widget class="QPushButton" name="pushButton_8">
     <property name="geometry">
      <rect>
       <x>10</x>
@@ -150,7 +140,7 @@ text-align:center;</string>
      <string/>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton_36">
+   <widget class="QPushButton" name="pushButton_9">
     <property name="geometry">
      <rect>
       <x>50</x>
@@ -172,20 +162,127 @@ text-align:center;</string>
      <string>MEDMOVE</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton_37">
+  </widget>
+  <widget class="QWidget" name="widget_2" native="true">
+   <property name="geometry">
+    <rect>
+     <x>250</x>
+     <y>-10</y>
+     <width>1201</width>
+     <height>781</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-image: url(:/Downloads/Sans titre-1.png);</string>
+   </property>
+   <widget class="QPushButton" name="pushButton_employees">
     <property name="geometry">
      <rect>
-      <x>20</x>
-      <y>110</y>
-      <width>31</width>
-      <height>31</height>
+      <x>370</x>
+      <y>410</y>
+      <width>221</width>
+      <height>61</height>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-image: url(:/image/arrow-left-circle.svg);</string>
+     <string notr="true">font: 75 8pt &quot;MS Shell Dlg 2&quot;;
+border-radius: 20px;
+color: black;
+padding: 0 8px;
+background: #E1E1E1;
+font: bold, &quot;Comic Sans MS&quot;;;
+text-align:center;</string>
     </property>
     <property name="text">
-     <string/>
+     <string>Gestion des ambulances</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_dons_3">
+    <property name="geometry">
+     <rect>
+      <x>370</x>
+      <y>240</y>
+      <width>211</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 75 8pt &quot;MS Shell Dlg 2&quot;;
+border-radius: 20px;
+color: black;
+padding: 0 8px;
+background: #E1E1E1;
+font: bold, &quot;Comic Sans MS&quot;;;
+text-align:center;</string>
+    </property>
+    <property name="text">
+     <string>Gestion des dons</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_employees_4">
+    <property name="geometry">
+     <rect>
+      <x>370</x>
+      <y>320</y>
+      <width>221</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 75 8pt &quot;MS Shell Dlg 2&quot;;
+border-radius: 20px;
+color: black;
+padding: 0 8px;
+background: #E1E1E1;
+font: bold, &quot;Comic Sans MS&quot;;;
+text-align:center;</string>
+    </property>
+    <property name="text">
+     <string>Gestion des employe</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_produit_2">
+    <property name="geometry">
+     <rect>
+      <x>360</x>
+      <y>80</y>
+      <width>211</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 75 8pt &quot;MS Shell Dlg 2&quot;;
+border-radius: 20px;
+color: black;
+padding: 0 8px;
+background: #E1E1E1;
+font: bold, &quot;Comic Sans MS&quot;;;
+text-align:center;</string>
+    </property>
+    <property name="text">
+     <string>Gestion des produits</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_client_2">
+    <property name="geometry">
+     <rect>
+      <x>370</x>
+      <y>160</y>
+      <width>201</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 75 8pt &quot;MS Shell Dlg 2&quot;;
+border-radius: 20px;
+color: black;
+padding: 0 8px;
+background: #E1E1E1;
+font: bold, &quot;Comic Sans MS&quot;;;
+text-align:center;</string>
+    </property>
+    <property name="text">
+     <string>Gestion des patients</string>
     </property>
    </widget>
   </widget>

@@ -3,6 +3,7 @@
 
 #include <QDialog>
 #include "donc.h"
+#include "arduino.h"
 
 namespace Ui {
 class Dons;
@@ -53,9 +54,20 @@ private slots:
 
     void on_calendarWidget_clicked(const QDate &date);
 
+    void on_chat_clicked();
+
+    void update_label();
+
+    void on_pushButton_16_clicked();
+
+    void on_pushButton_15_clicked();
+
 private:
     Ui::Dons *ui;
     donc d;
+    QByteArray data; // variable contenant les données reçues
+
+    Arduino A; // objet temporaire
 };
 
 #endif // DONS_H

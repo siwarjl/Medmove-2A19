@@ -1,5 +1,6 @@
 #include "stat_combo.h"
 #include "ui_stat_combo.h"
+#include "dons.h"
 
 stat_combo::stat_combo(QWidget * parent) :
     QDialog(parent),
@@ -59,3 +60,10 @@ stat_combo::~stat_combo()
 
     chartView->show();
     }
+
+void stat_combo::on_pushButton_37_clicked()
+{
+    Dons d ;
+        hide ();
+        d.exec ();
+}

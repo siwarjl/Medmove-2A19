@@ -23,9 +23,13 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 SOURCES += \
     agenda.cpp \
+    ard.cpp \
+    arduino.cpp \
+    chatbox.cpp \
     connection.cpp \
     donc.cpp \
     dons.cpp \
+    dumessengerconnectiondialog.cpp \
     main.cpp \
     mainwindow.cpp \
     stat_combo.cpp \
@@ -33,16 +37,22 @@ SOURCES += \
 
 HEADERS += \
     agenda.h \
+    ard.h \
+    arduino.h \
+    chatbox.h \
     connection.h \
     donc.h \
     dons.h \
+    dumessengerconnectiondialog.h \
     mainwindow.h \
     stat_combo.h \
     tache.h
 
 FORMS += \
     agenda.ui \
+    chatbox.ui \
     dons.ui \
+    dumessengerconnectiondialog.ui \
     mainwindow.ui \
     stat_combo.ui \
     tache.ui

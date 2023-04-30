@@ -119,7 +119,7 @@ QString donc::apercupdf()
                   "<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>"
                   "</head><body>"
                   "<table>"
-                  "<tr><th>ID</th><th>Type</th><th>Disponibilité</th><th>Donneur</th></tr>";
+                  "<tr><th>ID</th><th>Type</th><th>Disponibilité</th><th>Donneur</th><th>Date</th></tr>";
 
     QSqlQuery query;
     QString a, b, c, d, e;
@@ -142,7 +142,7 @@ QString donc::apercupdf()
         } else {
             text += "<tr style='background-color: #f7dc6f;'>";
         }
-        text += "<td>" + a + "</td><td>" + b + "</td><td>" + c + "</td><td>" + d + "</td></tr>";
+        text += "<td>" + a + "</td><td>" + b + "</td><td>" + c + "</td><td>" + d + "</td><td>" + e + "</td></tr>";
         row++;
     }
 
