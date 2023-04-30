@@ -1,3 +1,4 @@
+
 #include "ambulance.h"
 #include "ui_ambulance.h"
 #include "mainwindow.h"
@@ -17,6 +18,7 @@
 #include <iostream>
 #include <QPdfWriter>
 #include <QDesktopServices>
+#include "arduino.h"
 Ambulance::Ambulance(QWidget *parent) :
     QDialog(parent),
     ui(new Ui::Ambulance)
@@ -42,7 +44,6 @@ Ambulance::Ambulance(QWidget *parent) :
         Ambulancec a(matricule,marque,datec,dispo,etat,img);
         ui->view->setModel( a.afficher());
         historique h;
-              //ui->pushButton_18->setText(h.imprimer_hist());
 
 
 }
@@ -52,19 +53,6 @@ Ambulance::~Ambulance()
 {
     delete ui;
 }
-
-
-
-
-
-
-
-/*void Ambulance::on_pushButton_8_clicked()
-{
-    MainWindow *mainWindow = new MainWindow();
-       hide();
-          mainWindow->show();
-}*/
 
 
 
@@ -102,18 +90,20 @@ void Ambulance::on_pushButton_13_clicked()
                                       if(!file.exists()){
                                       finalmsg="fichier cree avec succes";
                                       }
+                      //mode ecriture seulem.|ecriture a la fin du file|ouvre le file en mode txt
+                                      // "|" pour combiner ces modes
                                      file.open(QIODevice::WriteOnly | QIODevice::Append | QIODevice::Text);
 
 
 
-                                     QTextStream txt(&file);
+                                     QTextStream txt(&file); //pour pouvoir ecrire dans le file
                                        QString d_info = QDateTime::currentDateTime().toString();
 
-                                     QString message2=d_info+" - Un Equipement a été ajouté avec la matricule "+ matricule +"\n";
+                                     QString message2=d_info+" - Une ambulance a été ajoutée avec la matricule "+ matricule +"\n";
                                      txt << message2;
                         historique h;
                         h.enregistrer_txt(ui->lineEdit_matricule->text(),marque,datec,ui->dispo->currentText(),etat);
-                   ui->historique->setText(h.imprimer_hist());
+                   ui->historique->setText(h.imprimer_hist()); //afficher sur l'interface
         } else {
             QMessageBox::warning(this, "Erreur", "Une erreur est survenue lors de l'ajout de l'enregistrement !");
         }
@@ -123,20 +113,7 @@ void Ambulance::on_pushButton_13_clicked()
 
 void Ambulance::on_pushButton_39_clicked()
 {
-    /*QString matricule = ui->lineEdit_matricule->text();
-    QString marque = ui->marque->text();
-    QString datec = ui->date->text();
-    int dispo= ui->dispo->text().toInt();
-    QString etat = ui->etat->text();
-    Ambulancec a(matricule,marque,datec,dispo,etat);
-    a.setmatricule(ui->lineEdit_matricule->text());
-    bool test=a.supprimer(a.getmatricule());
-    if (test) {
 
-        QMessageBox::information(this, "suppression réussi", "Le nouvel enregistrement a été supprimer avec succès !");
-    } else {
-        QMessageBox::warning(this, "Erreur", "Une erreur est survenue lors de la supprition de l'enregistrement !");
-    }          ui->view->setModel( a.afficher());*/
 QString matricule = ui->lineEdit_matricule_3->text();
          bool test=A.supprimer(matricule);
          if (test) {
@@ -161,7 +138,7 @@ QString matricule = ui->lineEdit_matricule_3->text();
                                   txt << message2;
                      historique h;
                     h.enregistrer_txt2(ui->lineEdit_matricule_3->text());
-                ui->historique->setText(h.imprimer_hist());
+                ui->historique->setText(h.imprimer_hist());  //afficher sur l'interface
                 ui->lineEdit_matricule_3->clear();
 
          }
@@ -172,23 +149,7 @@ QString matricule = ui->lineEdit_matricule_3->text();
 }
 
 
-/*void Ambulance::on_pushButton_23_clicked()
-{
-    QString matricule = ui->lineEdit_matricule->text();
-    QString marque = ui->marque->text();
-    QString datec = ui->date->text();
-    int dispo= ui->dispo->text().toInt();
-    QString etat = ui->etat->text();
-    Ambulancec a(matricule,marque,datec,dispo,etat);
-    a.setmatricule(ui->lineEdit_matricule->text());
-    bool test=a.modifier();
-    if (test)
 
-        ui->view->setModel( a.afficher());
-
-    else
-        QMessageBox::warning(nullptr,"Error","Ambulance non modifiee");
-}*/
 
 void Ambulance::on_pushButton_23_clicked()
 {
@@ -211,7 +172,7 @@ void Ambulance::on_pushButton_23_clicked()
                         QMessageBox::information(nullptr,QObject::tr("Ok"),
                                              QObject::tr("Modification effectuée\n"
                                                            "Click cancel to exit."),QMessageBox::Cancel);
-                        QString nomFile ="histo";
+                        QString nomFile ="hist";
                                                  QFile file("C:/Users/siwar/Desktop"+nomFile+".txt");
                                                  QString finalmsg="fichier modifie avec succes";
                                                   if(!file.exists()){
@@ -224,18 +185,17 @@ void Ambulance::on_pushButton_23_clicked()
                                                  QTextStream txt(&file);
                                                    QString d_info = QDateTime::currentDateTime().toString();
 
-                                                 QString message2=d_info+" - Un Equipement a été ajouté avec la matricule "+ matricule +"\n";
+                                                 QString message2=d_info+" - Une ambulance a été ajoutée avec la matricule "+ matricule +"\n";
                                                  txt << message2;
                                     historique h;
                                     h.enregistrer_txt1(ui->lineEdit_matricule_2->text(),marque,datec,ui->dispo->currentText(),etat);
-                               ui->historique->setText(h.imprimer_hist());
+                               ui->historique->setText(h.imprimer_hist()); //afficher sur l'interface
                         ui->view->setModel( a.afficher());
                         ui->lineEdit_matricule_2->clear();
                         ui->marque_2->clear();
                         ui->date_2->clear();
                         ui->dispo_2->clear();
                         ui->etat_2->clear();
-                        //ui->salle_graphicsView_2->grab->clear();
 
                         }
                     else
@@ -245,7 +205,6 @@ void Ambulance::on_pushButton_23_clicked()
                                                            "Click cancel to exit."),QMessageBox::Cancel);
                         }
 }
-
 
 
 void Ambulance::on_view_activated(const QModelIndex &index)
@@ -279,7 +238,7 @@ void Ambulance::on_view_activated(const QModelIndex &index)
 
 } }
 
-
+                //recherche
 void Ambulance::on_nomrecherche_cursorPositionChanged(int arg1, int arg2)
 {
     //recuperation des donnees de l'interface ui
@@ -288,128 +247,94 @@ void Ambulance::on_nomrecherche_cursorPositionChanged(int arg1, int arg2)
         QString datec=ui->date_2->text();
         QString dispo=ui->dispo_2->text();
         QString etat=ui->etat_2->text();
-        QPixmap img= ui->img2->grab();
+        QPixmap img= ui->img2->grab(); //grab():pour capturer l'image de ce widget et la stocker dans un objet QPixmap nommé img.
 
        Ambulancec a(matricule,marque,datec,dispo,etat,img);
-        ui->view->setModel( a.recherche(ui->nomrecherche->text()));
+        ui->view->setModel(a.recherche(ui->nomrecherche->text()));
 
 }
+
     //bouton pour tri
 void Ambulance::on_pushButton_19_clicked()
 {
     QString type_tri = "matricule";
-    //QString test_ordre ="croissant" ;
     type_tri = ui->comboBox_tri->currentText();
-    //test_ordre = ui->comboBox_ordre->currentText() ;
 
         if (type_tri == "matricule")
 
         ui->view->setModel(A.tricroissant_matricule());
+
         if (type_tri == "marque")
 
         ui->view->setModel(A.tricroissant_marque());
+
         if (type_tri == "etat")
 
-        ui->view->setModel(A.tricroissant_etat());}
-
-void Ambulance::on_pushButton_16_clicked()
-{
-                   QString text=A.apercupdf();
-                   ui->textEdit->setText(text);
-
-                                         QPdfWriter pdf("C:/Users/siwar/Desktop/Liste.pdf");
-
-                                               QPainter painter(&pdf);
-
-                                               int i = 4000;
-                                               painter.setPen(Qt::black);
-                                               painter.setFont(QFont("Konztante", 20));
-                                               painter.drawPixmap(QRect(0,200,2000,2000),QPixmap("C:/Users/siwar/Desktop/logo.png"));
-                                               painter.drawText(3000,1500,"LISTE DES AMBULANCES");
-                                               painter.setPen(Qt::black);
-                                               painter.setFont(QFont("Konztante", 50));
-                                               painter.setPen(Qt::black);
-                                               painter.setFont(QFont("Konztante", 9));
-                                               painter.drawText(200,3200,"MATRICULE");
-                                               painter.drawText(1500,3200,"MARQUE");
-                                               painter.drawText(3000,3200,"DATEC");
-                                               painter.drawText(4500,3200,"ETAT");
-                                               painter.drawText(6000,3200,"DISPONIBILITE");
-
-                                               QSqlQuery query;
-                                               query.prepare("select * from AMBULANCE");
-                                               query.exec();
-                                               while (query.next())
-                                               {
-                                                   painter.drawText(200,i,query.value(0).toString());
-                                                   painter.drawText(1500,i,query.value(1).toString());
-                                                   painter.drawText(3000,i,query.value(2).toString());
-                                                   painter.drawText(4500,i,query.value(3).toString());
-                                                   painter.drawText(6000,i,query.value(4).toString());
-
-                                                   i = i +500;
-                                               }
-
-                                               int reponse = QMessageBox ::question(this, "PDF généré", "Afficher le PDF ?", QMessageBox::Yes |  QMessageBox::No);
-                                               if (reponse == QMessageBox::Yes)
-                                               {
-                                                   QDesktopServices::openUrl(QUrl::fromLocalFile("C:/Users/siwar/Desktop/Liste.pdf"));
-
-                                                   painter.end();
-                                               }
-                                               if (reponse == QMessageBox::No)
-                                               {
-                                                   painter.end();
-                                               }
+        ui->view->setModel(A.tricroissant_etat());
 }
 
-/*void Ambulance::on_pushButton_17_clicked()
+        //PDF
+void Ambulance::on_pushButton_16_clicked()
 {
-    //ui->groupBox;
-    ui->progressBar->setValue(0);
-}*/
+    Ambulancec s;
+        QString text = s.apercupdf();
+        ui->textEdit->setText(text);
 
-/*void Ambulance::on_pb_statistique_2_clicked()
-{
-    int SA=0;
-    int a =A.statistique_E(ui->comboBoxStat->currentText());
-     int t=A.statistique_ET();
-     SA=(a*100)/t;
-     ui->progressBar->setValue(SA);
-}*/
+        QPrinter printer;
+        printer.setPrinterName("imprimer");  //nom de l'imprimante
+        printer.setOutputFormat(QPrinter::PdfFormat);   //format de sortie
+        printer.setOutputFileName("C:/Users/siwar/Desktop/ambulances.pdf");  //nom du fichier
+        printer.setFullPage(true); // occuper toute la surface disponible sur la feuille ou non.
 
-/*void Ambulance::on_image_linkActivated(const QString &link)
-{
-    QString dir = QFileDialog::getOpenFileName(this,tr("Select Picture"),"C:/Users/Admin/Desktop/capture.png");
-            QPixmap pic(dir);
-            int x = ui->image->width();
-            int y = ui->image->height();
-            ui->image->setPixmap(pic.scaled(x,y,Qt::KeepAspectRatio));
-}*/
+        QTextDocument doc;
+        doc.setHtml(text); // text contient le code HTML qui sera converti en document par la méthode setHtml().
 
-/*void Ambulance::on_pushButton_14_clicked()
-{
-    QString dir = QFileDialog::getOpenFileName(this,tr("Select Picture"),"C:/Users/Admin/Desktop/capture.png");
-            QPixmap pic(dir);
-            int x = ui->image->width();
-            int y = ui->image->height();
-            ui->image->setPixmap(pic.scaled(x,y,Qt::KeepAspectRatio));
-}*/
+        QPainter painter; //dessiner sur l'imprimante
+        painter.begin(&printer);
 
+        // Dessiner le logo
+        painter.drawPixmap(QRect(0, -45, 200, 200), QPixmap("C:/Users/siwar/Desktop/logo.png"));
+
+        // Centrer le titre horizontalement
+        QString title = "LA LISTE DES AMBULANCES";
+        QFont titleFont("Arial", 20, QFont::Bold); //forme du texte+taille ::Bold =gras
+        QFontMetrics titleMetrics(titleFont); //calculer les mesures de la police de caractères "titleFont"
+        int titleWidth = titleMetrics.width(title); //largeur du titre
+        int titleX = (printer.pageRect().width() - titleWidth) / 2;
+        painter.setFont(titleFont);
+        painter.drawText(titleX, 70, title); //70:hauteur
+
+        //Calcule la position du tableau pour le centrer horizontalement
+        int tableWidth = doc.size().width() * 1.2; //calculer largeur du tab
+        int tableX = ((printer.pageRect().width() - tableWidth) / 2) + 74; //calcule la position horizontale où la table sera dessinée
+
+        // dessiner le texte et le tab sur la page
+        painter.translate(tableX, 0);
+        doc.setPageSize(QSize(tableWidth, INT_MAX));//(INT_MAX) pour que le document puisse s'étendre sur plusieurs pages si nécessaire.
+        doc.drawContents(&painter);
+
+        painter.end(); //liberation
+}
+        //IMAGE
+
+
+        //retourner l'emplacement par défaut où sont stockées les images
+        //cette fct retourne l'emplacement de travail actuel si elle ne trouve aucun emplacement
 
 static inline QString picturesLocation()
 {
     return QStandardPaths::standardLocations(QStandardPaths::PicturesLocation).value(0, QDir::currentPath());
 }
 
-
 void Ambulance::on_pushButton_22_clicked()
 {
     //to do
     QString m_currentPath;
-    //récupérer file name
+    //choix du fichier
     QFileDialog fileDialog(this);
+    //définir le mode de sélection de fichier à ouverture
     fileDialog.setAcceptMode(QFileDialog::AcceptOpen);
+    //type de fichier autorisé
     fileDialog.setMimeTypeFilters(QStringList() << "image/png"); //<< "image/png"
     fileDialog.setWindowTitle(tr("Open PNG File"));
     if (m_currentPath.isEmpty())
@@ -418,26 +343,22 @@ void Ambulance::on_pushButton_22_clicked()
   while (fileDialog.exec() != QDialog::Accepted )
         ;
 
-    m_currentPath=fileDialog.selectedFiles().constFirst() ; //charger image
-
+    m_currentPath=fileDialog.selectedFiles().constFirst() ; //récupérer le chemin complet du fichier sélectionné.
+    //nouvelle scène graphique de taille 680x520
     QGraphicsScene * scene=new QGraphicsScene(QRect(10, 10, 680, 520));
 
-
+    //nouvel objet QGraphicsPixmapItem à partir de l'image PNG chargée.
     QGraphicsItem * image=new QGraphicsPixmapItem(QPixmap(m_currentPath));
-    scene ->addItem(image);
+    scene ->addItem(image);  //najoutih lel scene
 
-    ui->img1->setScene(scene);
-    ui->img1->fitInView(scene->sceneRect(), Qt::KeepAspectRatio);
-    ui->img1->show();
+    ui->img1->setScene(scene); //definir la scene
+    ui->img1->fitInView(scene->sceneRect(), Qt::KeepAspectRatio); //regler la vue
+    ui->img1->show(); //afficher
 
 
 }
 
-/*void Ambulance::on_statistique_clicked()
-{
-    statistique stat ;
-    stat.exec();
-}*/
+
 
 
 
@@ -447,7 +368,7 @@ void Ambulance::on_consulter_clicked()
 
     QSqlQuery qry;
     qry.prepare("select * from AMBULANCE where matricule = :matricule") ;
-    qry.bindValue(":matricule", matricule);
+    qry.bindValue(":matricule", matricule); //lier la val de matricule au matricule de la bd
     if(qry.exec())
     {
         while(qry.next())
@@ -462,17 +383,7 @@ void Ambulance::on_consulter_clicked()
          image::showImage(ui->img_consulter, qry.value(5).toByteArray() );
  } }
 
-
-
-
 }
-
-
-
-
-
-
-
 
 
 void Ambulance::on_load_modifier_clicked()
@@ -491,7 +402,7 @@ void Ambulance::on_load_modifier_clicked()
   while (fileDialog.exec() != QDialog::Accepted )
         ;
 
-    m_currentPath=fileDialog.selectedFiles().constFirst() ; //charger image
+    m_currentPath=fileDialog.selectedFiles().constFirst() ;
 
     QGraphicsScene * scene=new QGraphicsScene(QRect(10, 10, 680, 520));
 
@@ -504,6 +415,7 @@ void Ambulance::on_load_modifier_clicked()
     ui->img2->show();
 }
 
+    //STAT
 void Ambulance::on_statistique_clicked()
 {
     statistique stat ;
@@ -511,3 +423,10 @@ void Ambulance::on_statistique_clicked()
 }
 
 
+
+void Ambulance::on_arduino_2_clicked()
+{
+    arduino ar;
+    ar.setModal(true);
+    ar.exec();
+}
