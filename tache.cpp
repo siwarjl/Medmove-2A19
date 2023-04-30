@@ -2,6 +2,8 @@
 #include "ui_tache.h"
 #include "mainwindow.h"
 #include"produit.h"
+#include"employe.h"
+
 tache::tache(QWidget *parent) :
     QDialog(parent),
     ui(new Ui::tache)
@@ -26,4 +28,11 @@ void tache::on_pushButton_produit_2_clicked()
    produit p ;
      hide();
      p.exec();
+}
+
+void tache::on_pushButton_employees_4_clicked()
+{
+    employe e ;
+    hide ();
+    e.exec ();
 }

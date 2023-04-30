@@ -20,6 +20,8 @@ private slots:
 
     void on_pushButton_produit_2_clicked();
 
+    void on_pushButton_employees_4_clicked();
+
 private:
     Ui::tache *ui;
 };

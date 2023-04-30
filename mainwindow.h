@@ -20,6 +20,10 @@ private slots:
 
     void on_pushButton_17_clicked();
 
+    void on_chatbox_clicked();
+
+    void on_pushButton_clicked();
+
 private:
     Ui::MainWindow *ui;
 };
