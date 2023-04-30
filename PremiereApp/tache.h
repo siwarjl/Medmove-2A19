@@ -16,7 +16,13 @@ public:
     ~tache();
 
 private slots:
-    void on_pushButton_clicked();
+    void on_pushButton_5_clicked();
+
+    void on_pushButton_produit_2_clicked();
+
+    void on_pushButton_employees_4_clicked();
+
+    void on_pushButton_employees_clicked();
 
     void on_pushButton_client_2_clicked();
 

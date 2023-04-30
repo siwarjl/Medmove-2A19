@@ -1,11 +1,19 @@
 #include "mainwindow.h"
+#include <QtWidgets/QApplication>
+#include <QtWidgets/QLabel>
 #include <QApplication>
 #include <QMessageBox>
-#include <QDebug>
 #include "connection.h"
+#include <QCoreApplication>
+#include "widget.h"
+
+
 int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
+
+
+
     MainWindow w;
     Connection c;
     bool test=c.createconnect();
@@ -20,7 +28,6 @@ int main(int argc, char *argv[])
         QMessageBox::warning(nullptr, QObject::tr("database is not open"),
                     QObject::tr("connection failed.\n"
                                 "Click Cancel to exit."), QMessageBox::Cancel);
-
 
 
     return a.exec();

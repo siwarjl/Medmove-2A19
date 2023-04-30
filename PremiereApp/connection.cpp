@@ -1,5 +1,7 @@
 #include "connection.h"
-
+#include <QSqlDatabase>
+#include <QSqlError>
+#include <QSqlQuery>
 Connection::Connection()
 {
 

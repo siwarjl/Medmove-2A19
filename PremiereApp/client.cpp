@@ -14,7 +14,7 @@
 #include<QDebug>
 #include "connection.h"
 #include "tache.h"
-#include "stat_combo.h"
+#include "stat_combop.h"
 #include "smtp.h"
 client::client(QWidget *parent) :
     QDialog(parent),
@@ -276,9 +276,9 @@ void client::on_pushButton_38_clicked()
 
 void client::on_pushButton_42_clicked()
 {
-    stat_combo *s = new stat_combo();
+    stat_combop *s = new stat_combop();
 
-            s->setWindowTitle("Les Statistiques selon le Genre");
+            s->setWindowTitle("Les Statistiques selon l'etat");
             s->choix_pie();
             s->show();
 }

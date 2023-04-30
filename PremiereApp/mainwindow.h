@@ -16,7 +16,13 @@ public:
     ~MainWindow();
 
 private slots:
-    void on_pushButton_40_clicked();
+    void on_pushButton_12_clicked();
+
+    void on_pushButton_17_clicked();
+
+    void on_chatbox_clicked();
+
+    void on_pushButton_clicked();
 
     void on_pushButton_11_clicked();
 

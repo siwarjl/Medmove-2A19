@@ -15,6 +15,9 @@ public:
     explicit stat(QWidget *parent = nullptr);
     ~stat();
 
+private slots:
+    void on_pb_statistique_2_clicked();
+
 private:
     Ui::stat *ui;
 };

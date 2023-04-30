@@ -6,45 +6,20 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1494</width>
-    <height>863</height>
+    <width>1342</width>
+    <height>716</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>Dialog</string>
   </property>
-  <property name="styleSheet">
-   <string notr="true"/>
-  </property>
-  <widget class="QPushButton" name="pushButton">
-   <property name="geometry">
-    <rect>
-     <x>490</x>
-     <y>10</y>
-     <width>93</width>
-     <height>41</height>
-    </rect>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">font: 75 8pt &quot;MS Shell Dlg 2&quot;;
-border-radius: 20px;
-color: black;
-padding: 0 8px;
-background: #E1E1E1;
-font: bold, &quot;Comic Sans MS&quot;;;
-text-align:center;</string>
-   </property>
-   <property name="text">
-    <string>Patient</string>
-   </property>
-  </widget>
   <widget class="QTabWidget" name="Patient">
    <property name="geometry">
     <rect>
      <x>270</x>
-     <y>60</y>
+     <y>10</y>
      <width>1231</width>
-     <height>691</height>
+     <height>711</height>
     </rect>
    </property>
    <property name="font">
@@ -1028,29 +1003,6 @@ text-align:center;
       </rect>
      </property>
     </widget>
-    <widget class="QPushButton" name="email">
-     <property name="geometry">
-      <rect>
-       <x>600</x>
-       <y>150</y>
-       <width>171</width>
-       <height>51</height>
-      </rect>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">font: 75 8pt &quot;MS Shell Dlg 2&quot;;
-border-radius: 20px;
-color: black;
-padding: 0 8px;
-background: #ebc5c5;
-font: bold, &quot;Comic Sans MS&quot;;;
-text-align:center;
-</string>
-     </property>
-     <property name="text">
-      <string>Mail</string>
-     </property>
-    </widget>
     <widget class="QComboBox" name="comboBox">
      <property name="geometry">
       <rect>
@@ -1079,8 +1031,8 @@ text-align:center;
     <widget class="QPushButton" name="pushButton_42">
      <property name="geometry">
       <rect>
-       <x>950</x>
-       <y>40</y>
+       <x>600</x>
+       <y>160</y>
        <width>171</width>
        <height>41</height>
       </rect>
@@ -1112,6 +1064,15 @@ text-align:center;</string>
        <height>20</height>
       </rect>
      </property>
+     <property name="styleSheet">
+      <string notr="true">border: 2px solid black;
+font: 75 8pt &quot;MS Shell Dlg 2&quot;;
+border-radius: 10px;
+padding: 0 8px;
+background: white;
+font: bold, &quot;Comic Sans MS&quot;;;
+text-align:center;</string>
+     </property>
      <property name="echoMode">
       <enum>QLineEdit::Password</enum>
      </property>
@@ -1128,6 +1089,15 @@ text-align:center;</string>
        <height>16</height>
       </rect>
      </property>
+     <property name="styleSheet">
+      <string notr="true">border: 2px solid black;
+font: 75 8pt &quot;MS Shell Dlg 2&quot;;
+border-radius: 10px;
+padding: 0 8px;
+background: white;
+font: bold, &quot;Comic Sans MS&quot;;;
+text-align:center;</string>
+     </property>
      <property name="placeholderText">
       <string>subject</string>
      </property>
@@ -1136,23 +1106,41 @@ text-align:center;</string>
      <property name="geometry">
       <rect>
        <x>88</x>
-       <y>460</y>
+       <y>500</y>
        <width>651</width>
-       <height>23</height>
+       <height>41</height>
       </rect>
      </property>
+     <property name="styleSheet">
+      <string notr="true">font: 75 8pt &quot;MS Shell Dlg 2&quot;;
+border-radius: 20px;
+color: black;
+padding: 0 8px;
+background: #ebc5c5;
+font: bold, &quot;Comic Sans MS&quot;;;
+text-align:center;</string>
+     </property>
      <property name="text">
-      <string>Send</string>
+      <string>SEND</string>
      </property>
     </widget>
     <widget class="QTextEdit" name="msg">
      <property name="geometry">
       <rect>
        <x>88</x>
-       <y>166</y>
+       <y>190</y>
        <width>651</width>
        <height>291</height>
       </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border: 2px solid black;
+font: 75 8pt &quot;MS Shell Dlg 2&quot;;
+border-radius: 10px;
+padding: 0 8px;
+background: white;
+font: bold, &quot;Comic Sans MS&quot;;;
+text-align:center;</string>
      </property>
      <property name="placeholderText">
       <string>type your message here ...</string>
@@ -1167,6 +1155,15 @@ text-align:center;</string>
        <height>21</height>
       </rect>
      </property>
+     <property name="styleSheet">
+      <string notr="true">border: 2px solid black;
+font: 75 8pt &quot;MS Shell Dlg 2&quot;;
+border-radius: 10px;
+padding: 0 8px;
+background: white;
+font: bold, &quot;Comic Sans MS&quot;;;
+text-align:center;</string>
+     </property>
      <property name="placeholderText">
       <string>recipient</string>
      </property>
@@ -1174,14 +1171,23 @@ text-align:center;</string>
     <widget class="QPushButton" name="browseBtn">
      <property name="geometry">
       <rect>
-       <x>665</x>
-       <y>129</y>
-       <width>75</width>
-       <height>24</height>
+       <x>670</x>
+       <y>120</y>
+       <width>121</width>
+       <height>51</height>
       </rect>
      </property>
+     <property name="styleSheet">
+      <string notr="true">font: 75 8pt &quot;MS Shell Dlg 2&quot;;
+border-radius: 20px;
+color: black;
+padding: 0 8px;
+background: #ebc5c5;
+font: bold, &quot;Comic Sans MS&quot;;;
+text-align:center;</string>
+     </property>
      <property name="text">
-      <string>Browse ...</string>
+      <string>Browse</string>
      </property>
     </widget>
     <widget class="QLineEdit" name="file">
@@ -1192,6 +1198,15 @@ text-align:center;</string>
        <width>571</width>
        <height>23</height>
       </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border: 2px solid black;
+font: 75 8pt &quot;MS Shell Dlg 2&quot;;
+border-radius: 10px;
+padding: 0 8px;
+background: white;
+font: bold, &quot;Comic Sans MS&quot;;;
+text-align:center;</string>
      </property>
      <property name="placeholderText">
       <string>attachement here</string>
@@ -1222,7 +1237,7 @@ background-color: rgb(163, 163, 163);</string>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-image: url(:/C:/Users/abeja/Desktop/image/home (1).svg);</string>
+     <string notr="true">background-image: url(:/Ahmed_Bejaoui_1A19_G1/projetf/image/home (1).svg);</string>
     </property>
     <property name="text">
      <string/>
@@ -1260,7 +1275,7 @@ text-align:center;</string>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-image: url(:/C:/Users/abeja/Desktop/image/align-justify.svg);</string>
+     <string notr="true">background-image: url(:/Ahmed_Bejaoui_1A19_G1/projetf/image/align-justify.svg);</string>
     </property>
     <property name="text">
      <string/>
@@ -1320,8 +1335,7 @@ text-align:center;</string>
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-image: url(:/C:/Users/abeja/Desktop/image/settings.svg);
-</string>
+     <string notr="true">background-image: url(:/Ahmed_Bejaoui_1A19_G1/projetf/image/settings.svg);</string>
     </property>
     <property name="text">
      <string/>

@@ -12,3 +12,12 @@ stat::~stat()
 {
     delete ui;
 }
+
+void stat::on_pb_statistique_2_clicked()
+{
+    int SA=0;
+    int a =A.statistique_E(ui->comboBoxStat->currentText());
+     int t=A.statistique_ET();
+     SA=(a*100)/t;
+     ui->progressBar->setValue(SA);
+}

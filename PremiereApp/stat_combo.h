@@ -29,14 +29,16 @@ class stat_combo : public QDialog
     Q_OBJECT
 
 public:
-    explicit stat_combo(QWidget *parent = nullptr);
+    explicit stat_combo(QWidget * parent = nullptr);
     ~stat_combo();
-    QChartView *chartView ;
+    QChartView * chartView ;
     void choix_pie();
+private slots:
+
+    void on_pushButton_26_clicked();
+
 private:
     Ui::stat_combo *ui;
 
 };
-
-
 #endif // STAT_COMBO_H
