@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>stat_combo</class>
+ <widget class="QDialog" name="stat_combo">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>830</width>
+    <height>571</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QGraphicsView" name="graphicsView">
+   <property name="geometry">
+    <rect>
+     <x>260</x>
+     <y>0</y>
+     <width>501</width>
+     <height>581</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QWidget" name="widget_3" native="true">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>261</width>
+     <height>821</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">
+background-color: rgb(163, 163, 163);</string>
+   </property>
+   <widget class="QPushButton" name="pushButton_30">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>170</y>
+      <width>51</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-image: url(:/image/home (1).svg);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_31">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>160</y>
+      <width>101</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-radius: 30px;
+
+color: black;
+padding: 0 8px;
+background-color: rgb(163, 163, 163);
+font: bold, &quot;Comic Sans MS&quot;;;
+text-align:center;</string>
+    </property>
+    <property name="text">
+     <string>ACCUEIL</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_32">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>260</y>
+      <width>51</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-image: url(:/image/align-justify.svg);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_33">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>250</y>
+      <width>101</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-radius: 30px;
+
+color: black;
+padding: 0 8px;
+background-color: rgb(163, 163, 163);
+font: bold, &quot;Comic Sans MS&quot;;;
+text-align:center;</string>
+    </property>
+    <property name="text">
+     <string>TACHE</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_34">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>330</y>
+      <width>101</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-radius: 30px;
+
+color: black;
+padding: 0 8px;
+background-color: rgb(163, 163, 163);
+font: bold, &quot;Comic Sans MS&quot;;;
+text-align:center;</string>
+    </property>
+    <property name="text">
+     <string>PARAMETRE</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_35">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>340</y>
+      <width>51</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-image: url(:/image/settings.svg);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_36">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>10</y>
+      <width>151</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 75 8pt &quot;MS Shell Dlg 2&quot;;
+border-radius: 20px;
+color: black;
+padding: 0 8px;
+background: #ebc5c5;
+font: bold, &quot;Comic Sans MS&quot;;;
+text-align:center;</string>
+    </property>
+    <property name="text">
+     <string>MEDMOVE</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_37">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>110</y>
+      <width>31</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-image: url(:/image/arrow-left-circle.svg);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

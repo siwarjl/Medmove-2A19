@@ -1,0 +1,39 @@
+<RCC>
+    <qresource prefix="/">
+        <file>../image/alert-circle.svg</file>
+        <file>../image/align-justify.svg</file>
+        <file>../image/arrow-down.svg</file>
+        <file>../image/arrow-left (1).svg</file>
+        <file>../image/arrow-left.svg</file>
+        <file>../image/arrow-left-circle.svg</file>
+        <file>../image/arrow-right (1).svg</file>
+        <file>../image/arrow-right.svg</file>
+        <file>../image/arrow-up.svg</file>
+        <file>../image/bar-chart-2 (1).svg</file>
+        <file>../image/bar-chart-2.svg</file>
+        <file>../image/bell (1).svg</file>
+        <file>../image/bell (2).svg</file>
+        <file>../image/bell.svg</file>
+        <file>../image/file-text (1).svg</file>
+        <file>../image/file-text (2).svg</file>
+        <file>../image/file-text.svg</file>
+        <file>../image/home (1).svg</file>
+        <file>../image/home.png</file>
+        <file>../image/home.svg</file>
+        <file>../image/homeee.png</file>
+        <file>../image/layers (1).svg</file>
+        <file>../image/layers.svg</file>
+        <file>../image/more-horizontal (1).svg</file>
+        <file>../image/more-horizontal.svg</file>
+        <file>../image/Sans titre-1.png</file>
+        <file>../image/save (1).svg</file>
+        <file>../image/save.svg</file>
+        <file>../image/search (1).svg</file>
+        <file>../image/search.svg</file>
+        <file>../image/settings.svg</file>
+        <file>../image/trash-2 (1).svg</file>
+        <file>../image/trash-2.svg</file>
+        <file>../image/user (1).svg</file>
+        <file>../image/user.svg</file>
+    </qresource>
+</RCC>
