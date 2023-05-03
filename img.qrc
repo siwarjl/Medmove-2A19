@@ -1,0 +1,33 @@
+<RCC>
+    <qresource prefix="/">
+        <file>../../Downloads/ACCUEIL.png</file>
+        <file>../../Downloads/Sans titre-1.png</file>
+        <file>../../Downloads/arrow-left (1).svg</file>
+        <file>../../Downloads/arrow-right (1).svg</file>
+        <file>../../Downloads/arrow-right.svg</file>
+        <file>../../Downloads/arrow-left.svg</file>
+        <file>../../Downloads/more-horizontal (1).svg</file>
+        <file>../../Downloads/user (1).svg</file>
+        <file>../../Downloads/settings.svg</file>
+        <file>../../Downloads/search.svg</file>
+        <file>../../Downloads/bar-chart-2.svg</file>
+        <file>../../Downloads/file-text (1).svg</file>
+        <file>../../Downloads/home (1).svg</file>
+        <file>../../Downloads/align-justify.svg</file>
+        <file>../../Downloads/bell (2).svg</file>
+        <file>../../Downloads/file-text (2).svg</file>
+        <file>../../Downloads/trash-2 (1).svg</file>
+        <file>../../Downloads/search (1).svg</file>
+        <file>../../Downloads/bar-chart-2 (1).svg</file>
+        <file>../../Downloads/arrow-up.svg</file>
+        <file>../../Downloads/arrow-down.svg</file>
+        <file>../homeee.png</file>
+        <file>../../Downloads/save (1).svg</file>
+        <file>../../Downloads/ccccc.png</file>
+        <file>../../Downloads/cal.png</file>
+        <file>../../Downloads/2222.png</file>
+        <file>../../Downloads/camera.svg</file>
+        <file>../../Downloads/filter (1).svg</file>
+        <file>../../Downloads/edit.svg</file>
+    </qresource>
+</RCC>

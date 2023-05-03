@@ -6,21 +6,33 @@
    <rect>
     <x>0</x>
     <y>0</y>
+<<<<<<< HEAD
     <width>1138</width>
     <height>686</height>
+=======
+    <width>1227</width>
+    <height>741</height>
+>>>>>>> origin/produit
    </rect>
   </property>
   <property name="windowTitle">
    <string>Dialog</string>
   </property>
+<<<<<<< HEAD
   <property name="styleSheet">
    <string notr="true"/>
   </property>
+=======
+>>>>>>> origin/produit
   <widget class="QPushButton" name="pushButton_7">
    <property name="geometry">
     <rect>
      <x>600</x>
+<<<<<<< HEAD
      <y>10</y>
+=======
+     <y>20</y>
+>>>>>>> origin/produit
      <width>141</width>
      <height>41</height>
     </rect>
@@ -42,7 +54,11 @@ text-align:center;</string>
    <property name="geometry">
     <rect>
      <x>280</x>
+<<<<<<< HEAD
      <y>50</y>
+=======
+     <y>60</y>
+>>>>>>> origin/produit
      <width>891</width>
      <height>601</height>
     </rect>
@@ -883,7 +899,11 @@ text-align:center;</string>
    <property name="geometry">
     <rect>
      <x>0</x>
+<<<<<<< HEAD
      <y>-10</y>
+=======
+     <y>0</y>
+>>>>>>> origin/produit
      <width>221</width>
      <height>821</height>
     </rect>

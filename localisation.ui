@@ -6,8 +6,13 @@
    <rect>
     <x>0</x>
     <y>0</y>
+<<<<<<< HEAD
     <width>911</width>
     <height>494</height>
+=======
+    <width>916</width>
+    <height>566</height>
+>>>>>>> origin/produit
    </rect>
   </property>
   <property name="windowTitle">
@@ -19,8 +24,13 @@
    </property>
    <property name="geometry" stdset="0">
     <rect>
+<<<<<<< HEAD
      <x>80</x>
      <y>30</y>
+=======
+     <x>100</x>
+     <y>40</y>
+>>>>>>> origin/produit
      <width>751</width>
      <height>441</height>
     </rect>
@@ -29,8 +39,13 @@
   <widget class="QPushButton" name="pushButton_26">
    <property name="geometry">
     <rect>
+<<<<<<< HEAD
      <x>10</x>
      <y>30</y>
+=======
+     <x>30</x>
+     <y>40</y>
+>>>>>>> origin/produit
      <width>31</width>
      <height>31</height>
     </rect>

@@ -1,4 +1,11 @@
 #include "mainwindow.h"
+<<<<<<< HEAD
+=======
+#include <QtWidgets/QApplication>
+#include <QtWidgets/QLabel>
+
+
+>>>>>>> origin/produit
 #include <QApplication>
 #include <QMessageBox>
 #include "connection.h"
@@ -6,8 +13,15 @@
 int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
+<<<<<<< HEAD
     MainWindow w;
     w.show();
+=======
+
+
+
+    MainWindow w;
+>>>>>>> origin/produit
     Connection c;
     bool test=c.createconnect();
     if(test)
@@ -21,6 +35,7 @@ int main(int argc, char *argv[])
         QMessageBox::warning(nullptr, QObject::tr("database is not open"),
                     QObject::tr("connection failed.\n"
                                 "Click Cancel to exit."), QMessageBox::Cancel);
+<<<<<<< HEAD
 
 
 
@@ -30,3 +45,7 @@ int main(int argc, char *argv[])
 
 =======
 >>>>>>> origin/gestionAmbulance
+=======
+    return a.exec();
+}
+>>>>>>> origin/produit

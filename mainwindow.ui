@@ -7,12 +7,18 @@
     <x>0</x>
     <y>0</y>
 <<<<<<< HEAD
+<<<<<<< HEAD
     <width>1182</width>
     <height>572</height>
+=======
+    <width>1472</width>
+    <height>753</height>
+>>>>>>> origin/produit
    </rect>
   </property>
   <property name="windowTitle">
    <string>MainWindow</string>
+<<<<<<< HEAD
 =======
     <width>1277</width>
     <height>812</height>
@@ -40,12 +46,17 @@
      <string notr="true">background-image: url(:/homeee.png);</string>
     </property>
    </widget>
+=======
+  </property>
+  <widget class="QWidget" name="centralwidget">
+>>>>>>> origin/produit
    <widget class="QWidget" name="widget_3" native="true">
     <property name="geometry">
      <rect>
       <x>-10</x>
       <y>0</y>
       <width>251</width>
+<<<<<<< HEAD
       <height>871</height>
 =======
    <widget class="QWidget" name="widget_3" native="true">
@@ -56,16 +67,23 @@
       <width>251</width>
       <height>761</height>
 >>>>>>> origin/gestionAmbulance
+=======
+      <height>761</height>
+>>>>>>> origin/produit
      </rect>
     </property>
     <property name="styleSheet">
      <string notr="true">background-color: rgb(163, 163, 163);</string>
     </property>
 <<<<<<< HEAD
+<<<<<<< HEAD
     <widget class="QPushButton" name="pushButton_3">
 =======
     <widget class="QPushButton" name="pushButton_2">
 >>>>>>> origin/gestionAmbulance
+=======
+    <widget class="QPushButton" name="pushButton_2">
+>>>>>>> origin/produit
      <property name="geometry">
       <rect>
        <x>10</x>
@@ -76,15 +94,20 @@
      </property>
      <property name="styleSheet">
 <<<<<<< HEAD
+<<<<<<< HEAD
       <string notr="true">background-image: url(:/Bureau/image/home (1).svg);</string>
 =======
       <string notr="true">background-image: url(:/image/home (1).svg);</string>
 >>>>>>> origin/gestionAmbulance
+=======
+      <string notr="true">background-image: url(:/Downloads/home (1).svg);</string>
+>>>>>>> origin/produit
      </property>
      <property name="text">
       <string/>
      </property>
     </widget>
+<<<<<<< HEAD
 <<<<<<< HEAD
     <widget class="QPushButton" name="pushButton_16">
      <property name="geometry">
@@ -92,12 +115,17 @@
        <x>80</x>
        <y>170</y>
 =======
+=======
+>>>>>>> origin/produit
     <widget class="QPushButton" name="pushButton_10">
      <property name="geometry">
       <rect>
        <x>70</x>
        <y>160</y>
+<<<<<<< HEAD
 >>>>>>> origin/gestionAmbulance
+=======
+>>>>>>> origin/produit
        <width>101</width>
        <height>71</height>
       </rect>
@@ -116,10 +144,14 @@ text-align:center;</string>
      </property>
     </widget>
 <<<<<<< HEAD
+<<<<<<< HEAD
     <widget class="QPushButton" name="pushButton_17">
 =======
     <widget class="QPushButton" name="pushButton_11">
 >>>>>>> origin/gestionAmbulance
+=======
+    <widget class="QPushButton" name="pushButton_11">
+>>>>>>> origin/produit
      <property name="geometry">
       <rect>
        <x>10</x>
@@ -130,20 +162,28 @@ text-align:center;</string>
      </property>
      <property name="styleSheet">
 <<<<<<< HEAD
+<<<<<<< HEAD
       <string notr="true">background-image: url(:/Bureau/image/align-justify.svg);</string>
 =======
       <string notr="true">background-image: url(:/image/align-justify.svg);</string>
 >>>>>>> origin/gestionAmbulance
+=======
+      <string notr="true">background-image: url(:/Downloads/align-justify.svg);</string>
+>>>>>>> origin/produit
      </property>
      <property name="text">
       <string/>
      </property>
     </widget>
 <<<<<<< HEAD
+<<<<<<< HEAD
     <widget class="QPushButton" name="pushButton_18">
 =======
     <widget class="QPushButton" name="pushButton_12">
 >>>>>>> origin/gestionAmbulance
+=======
+    <widget class="QPushButton" name="pushButton_12">
+>>>>>>> origin/produit
      <property name="geometry">
       <rect>
        <x>70</x>
@@ -166,10 +206,14 @@ text-align:center;</string>
      </property>
     </widget>
 <<<<<<< HEAD
+<<<<<<< HEAD
     <widget class="QPushButton" name="pushButton_19">
 =======
     <widget class="QPushButton" name="pushButton_13">
 >>>>>>> origin/gestionAmbulance
+=======
+    <widget class="QPushButton" name="pushButton_13">
+>>>>>>> origin/produit
      <property name="geometry">
       <rect>
        <x>70</x>
@@ -192,10 +236,14 @@ text-align:center;</string>
      </property>
     </widget>
 <<<<<<< HEAD
+<<<<<<< HEAD
     <widget class="QPushButton" name="pushButton_20">
 =======
     <widget class="QPushButton" name="pushButton_14">
 >>>>>>> origin/gestionAmbulance
+=======
+    <widget class="QPushButton" name="pushButton_14">
+>>>>>>> origin/produit
      <property name="geometry">
       <rect>
        <x>10</x>
@@ -206,15 +254,20 @@ text-align:center;</string>
      </property>
      <property name="styleSheet">
 <<<<<<< HEAD
+<<<<<<< HEAD
       <string notr="true">background-image: url(:/Bureau/image/settings.svg);</string>
 =======
       <string notr="true">background-image: url(:/image/settings.svg);</string>
 >>>>>>> origin/gestionAmbulance
+=======
+      <string notr="true">background-image: url(:/Downloads/settings.svg);</string>
+>>>>>>> origin/produit
      </property>
      <property name="text">
       <string/>
      </property>
     </widget>
+<<<<<<< HEAD
 <<<<<<< HEAD
     <widget class="QPushButton" name="pushButton_21">
 =======
@@ -223,6 +276,12 @@ text-align:center;</string>
      <property name="geometry">
       <rect>
        <x>60</x>
+=======
+    <widget class="QPushButton" name="pushButton_15">
+     <property name="geometry">
+      <rect>
+       <x>110</x>
+>>>>>>> origin/produit
        <y>10</y>
        <width>151</width>
        <height>41</height>
@@ -241,6 +300,7 @@ text-align:center;</string>
       <string>MEDMOVE</string>
      </property>
     </widget>
+<<<<<<< HEAD
 <<<<<<< HEAD
     <widget class="QLabel" name="label">
      <property name="geometry">
@@ -405,13 +465,106 @@ text-align:center;</string>
       <x>250</x>
       <y>10</y>
       <width>1051</width>
+=======
+    <widget class="QPushButton" name="pushButton_16">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>610</y>
+       <width>71</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border-radius: 30px;
+
+color: black;
+padding: 0 8px;
+font: bold, &quot;Comic Sans MS&quot;;;
+background-color: rgb(188, 24, 27);
+text-align:center;</string>
+     </property>
+     <property name="text">
+      <string>Français</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_17">
+     <property name="geometry">
+      <rect>
+       <x>90</x>
+       <y>610</y>
+       <width>71</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border-radius: 30px;
+background-color: rgb(255, 69, 72);
+
+color: black;
+padding: 0 8px;
+font: bold, &quot;Comic Sans MS&quot;;;
+text-align:center;</string>
+     </property>
+     <property name="text">
+      <string>English</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="chatbox">
+     <property name="geometry">
+      <rect>
+       <x>50</x>
+       <y>480</y>
+       <width>101</width>
+       <height>71</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border-radius: 30px;
+
+color: black;
+padding: 0 8px;
+background-color: rgb(163, 163, 163);
+font: bold, &quot;Comic Sans MS&quot;;;
+text-align:center;</string>
+     </property>
+     <property name="text">
+      <string>chatbox</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton">
+     <property name="geometry">
+      <rect>
+       <x>80</x>
+       <y>110</y>
+       <width>93</width>
+       <height>28</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>mail</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="widget" native="true">
+    <property name="geometry">
+     <rect>
+      <x>240</x>
+      <y>0</y>
+      <width>1231</width>
+>>>>>>> origin/produit
       <height>731</height>
      </rect>
     </property>
     <property name="styleSheet">
+<<<<<<< HEAD
      <string notr="true">background-image: url(:/image/homeee.png);</string>
     </property>
 >>>>>>> origin/gestionAmbulance
+=======
+     <string notr="true">background-image: url(:/homeee.png);</string>
+    </property>
+>>>>>>> origin/produit
    </widget>
   </widget>
   <widget class="QMenuBar" name="menubar">
@@ -420,12 +573,17 @@ text-align:center;</string>
      <x>0</x>
      <y>0</y>
 <<<<<<< HEAD
+<<<<<<< HEAD
      <width>1182</width>
      <height>22</height>
 =======
      <width>1277</width>
      <height>26</height>
 >>>>>>> origin/gestionAmbulance
+=======
+     <width>1472</width>
+     <height>26</height>
+>>>>>>> origin/produit
     </rect>
    </property>
   </widget>

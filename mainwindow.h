@@ -3,11 +3,15 @@
 
 #include <QMainWindow>
 <<<<<<< HEAD
+<<<<<<< HEAD
 #include "arduino.h"
 #include "ard.h"
 =======
 
 >>>>>>> origin/gestionAmbulance
+=======
+
+>>>>>>> origin/produit
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
 QT_END_NAMESPACE
@@ -21,6 +25,7 @@ public:
     ~MainWindow();
 
 private slots:
+<<<<<<< HEAD
 <<<<<<< HEAD
  void update_label();
     void on_pushButton_28_clicked();
@@ -48,5 +53,17 @@ private:
 private:
     Ui::MainWindow *ui;
 >>>>>>> origin/gestionAmbulance
+=======
+    void on_pushButton_12_clicked();
+
+    void on_pushButton_17_clicked();
+
+    void on_chatbox_clicked();
+
+    void on_pushButton_clicked();
+
+private:
+    Ui::MainWindow *ui;
+>>>>>>> origin/produit
 };
 #endif // MAINWINDOW_H

@@ -1,12 +1,22 @@
 #include "arduino.h"
 <<<<<<< HEAD
+<<<<<<< HEAD
 
+=======
+#include <QString>
+#include <QDate>
+#include <QSqlQuery>
+#include <QSqlQueryModel>
+>>>>>>> origin/produit
 Arduino::Arduino()
 {
     data="";
 
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> origin/produit
     arduino_port_name="";
     arduino_is_available=false;
     serial=new QSerialPort;
@@ -22,7 +32,12 @@ QSerialPort *Arduino::getserial()
    return serial;
 }
 int Arduino::connect_arduino()
+<<<<<<< HEAD
 {   // recherche du port sur lequel la carte arduino identifée par  arduino_uno_vendor_id
+=======
+{
+    // recherche du port sur lequel la carte arduino identifée par arduino_uno_vendor_id
+>>>>>>> origin/produit
     // est connectée
     foreach (const QSerialPortInfo &serial_port_info, QSerialPortInfo::availablePorts()){
            if(serial_port_info.hasVendorIdentifier() && serial_port_info.hasProductIdentifier()){
@@ -30,6 +45,7 @@ int Arduino::connect_arduino()
                        == arduino_uno_producy_id) {
                    arduino_is_available = true;
                    arduino_port_name=serial_port_info.portName();
+<<<<<<< HEAD
                } } }
         qDebug() << "arduino_port_name is :" << arduino_port_name;
         if(arduino_is_available){ // configuration de la communication ( débit...)
@@ -45,6 +61,28 @@ int Arduino::connect_arduino()
             return 1;
         }
         return -1;
+=======
+               }
+           }
+    }
+
+    qDebug() << "arduino_port_name is :" << arduino_port_name;
+
+    if(arduino_is_available){ // configuration de la communication (débit...)
+        serial->setPortName(arduino_port_name);
+        serial->setBaudRate(QSerialPort::Baud9600); // débit : 9600 bits/s
+        serial->setDataBits(QSerialPort::Data8); // Longueur des données : 8 bits,
+        serial->setParity(QSerialPort::NoParity); // 1 bit de parité optionnel
+        serial->setStopBits(QSerialPort::OneStop); // Nombre de bits de stop : 1
+        serial->setFlowControl(QSerialPort::NoFlowControl);
+
+        if(serial->open(QSerialPort::ReadWrite)){
+           return 0;
+      }
+        return 1;
+    }
+    return -1;
+>>>>>>> origin/produit
 }
 
 int Arduino::close_arduino()
@@ -72,6 +110,7 @@ int Arduino::close_arduino()
 
 
 int Arduino::write_to_arduino( QByteArray d)
+<<<<<<< HEAD
 =======
 #include "ui_arduino.h"
 #include<arduino1.h>
@@ -211,6 +250,8 @@ void arduino::update_dist(const QString sensor_reading)
 
 int arduino::write_to_arduino( QByteArray d)
 >>>>>>> origin/gestionAmbulance
+=======
+>>>>>>> origin/produit
 
 {
 
@@ -222,6 +263,7 @@ int arduino::write_to_arduino( QByteArray d)
 
 
 }
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 
@@ -238,3 +280,5 @@ bool arduino1::ajouter()
 }
 
 >>>>>>> origin/gestionAmbulance
+=======
+>>>>>>> origin/produit

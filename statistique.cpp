@@ -1,8 +1,14 @@
 #include "statistique.h"
 #include "ui_statistique.h"
+<<<<<<< HEAD
 #include"ambulance.h"
 #include <iostream>
 #include "ui_ambulance.h"
+=======
+#include"produit.h"
+#include <iostream>
+#include "ui_produit.h"
+>>>>>>> origin/produit
 
 using namespace std;
 
@@ -23,7 +29,11 @@ int statistique::Stat_partie1()
 {
     QSqlQuery query;
     int count=0 ;
+<<<<<<< HEAD
     QSqlQuery requete("SELECT * FROM AMBULANCE WHERE dispo='dispo'") ;
+=======
+    QSqlQuery requete("SELECT * FROM produit1 WHERE etat='bonne'") ;
+>>>>>>> origin/produit
     while(requete.next())
     {
             count++ ;
@@ -36,7 +46,11 @@ int statistique::Stat_partie2()
 {
     QSqlQuery query;
     int count=0 ;
+<<<<<<< HEAD
     QSqlQuery requete("SELECT * FROM AMBULANCE WHERE dispo='non dispo'") ;
+=======
+    QSqlQuery requete("SELECT * FROM produit1 WHERE etat='mauvaise'") ;
+>>>>>>> origin/produit
     while(requete.next())
     {
             count++ ;
@@ -66,6 +80,7 @@ void statistique::paintEvent(QPaintEvent *)
 
 
     QPainter painter(this);
+<<<<<<< HEAD
     QRectF size=QRectF(100,100,this->width()-500,this->width()-500);
 
     painter.setBrush(QColor(235, 197, 197));
@@ -74,6 +89,15 @@ void statistique::paintEvent(QPaintEvent *)
     painter.setBrush(Qt::gray);
     painter.drawPie(size,5780*x,y*5780);
     ui->label_3->setText("Ambulance:Non Dispo") ;
+=======
+    QRectF size=QRectF(100,80,this->width()-500,this->width()-500);
+    painter.setBrush(Qt::white);
+    painter.drawPie(size,0,5780*x);
+    ui->label_2->setText("produit:bonne") ;
+    painter.setBrush(QColor(240, 0, 32));
+    painter.drawPie(size,5780*x,y*5780);
+    ui->label_3->setText("produit:mauvaise") ;
+>>>>>>> origin/produit
 
     ui->stat2->setNum(q1) ;
     ui->stat3->setNum(q2) ;
