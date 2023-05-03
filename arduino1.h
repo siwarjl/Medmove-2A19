@@ -1,0 +1,16 @@
+#ifndef ARDUINO1_H
+#define ARDUINO1_H
+#include<QDateTime>
+#include <QDebug>
+#include<QDate>
+#include<QSqlQuery>
+#include<QSqlQueryModel>
+class arduino1{
+public:
+    arduino1 (int nb,QString date1){this->nbr=nb;this->date_ajout=date1;}; //constructeur
+bool ajouter();  //methode d'ajout
+    //les attributs de la classe arduino
+int nbr;
+QString date_ajout;
+};
+#endif // ARDUINO1_H

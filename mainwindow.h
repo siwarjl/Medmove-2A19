@@ -2,8 +2,12 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
+<<<<<<< HEAD
 #include "arduino.h"
 #include "ard.h"
+=======
+
+>>>>>>> origin/gestionAmbulance
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
 QT_END_NAMESPACE
@@ -17,6 +21,7 @@ public:
     ~MainWindow();
 
 private slots:
+<<<<<<< HEAD
  void update_label();
     void on_pushButton_28_clicked();
 
@@ -33,5 +38,15 @@ private:
     Arduino A;
     QByteArray data;
       ard temp;
+=======
+    void on_pushButton_8_clicked();
+
+    void on_pushButton_11_clicked();
+
+    void on_pushButton_2_clicked();
+
+private:
+    Ui::MainWindow *ui;
+>>>>>>> origin/gestionAmbulance
 };
 #endif // MAINWINDOW_H

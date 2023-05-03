@@ -6,8 +6,13 @@
    <rect>
     <x>0</x>
     <y>0</y>
+<<<<<<< HEAD
     <width>1298</width>
     <height>689</height>
+=======
+    <width>1354</width>
+    <height>704</height>
+>>>>>>> origin/gestionAmbulance
    </rect>
   </property>
   <property name="windowTitle">
@@ -16,13 +21,19 @@
   <widget class="QWidget" name="widget_2" native="true">
    <property name="geometry">
     <rect>
+<<<<<<< HEAD
      <x>140</x>
      <y>-20</y>
+=======
+     <x>150</x>
+     <y>0</y>
+>>>>>>> origin/gestionAmbulance
      <width>1201</width>
      <height>781</height>
     </rect>
    </property>
    <property name="styleSheet">
+<<<<<<< HEAD
     <string notr="true">background-image: url(:/Bureau/image/Sans titre-1.png);</string>
    </property>
    <widget class="QPushButton" name="pushButton_employees">
@@ -53,6 +64,16 @@ text-align:center;</string>
       <x>360</x>
       <y>240</y>
       <width>231</width>
+=======
+    <string notr="true">background-image: url(:/image/Sans titre-1.png);</string>
+   </property>
+   <widget class="QPushButton" name="pushButton_dons_4">
+    <property name="geometry">
+     <rect>
+      <x>360</x>
+      <y>320</y>
+      <width>211</width>
+>>>>>>> origin/gestionAmbulance
       <height>61</height>
      </rect>
     </property>
@@ -69,12 +90,21 @@ text-align:center;</string>
      <string>Gestion des dons</string>
     </property>
    </widget>
+<<<<<<< HEAD
    <widget class="QPushButton" name="pushButton_employees_4">
     <property name="geometry">
      <rect>
       <x>360</x>
       <y>320</y>
       <width>231</width>
+=======
+   <widget class="QPushButton" name="pushButton_employees_5">
+    <property name="geometry">
+     <rect>
+      <x>360</x>
+      <y>400</y>
+      <width>221</width>
+>>>>>>> origin/gestionAmbulance
       <height>61</height>
      </rect>
     </property>
@@ -88,15 +118,26 @@ font: bold, &quot;Comic Sans MS&quot;;;
 text-align:center;</string>
     </property>
     <property name="text">
+<<<<<<< HEAD
      <string>Gestion des employes</string>
     </property>
    </widget>
    <widget class="QPushButton" name="pushButton_produit_2">
+=======
+     <string>Gestion des employe</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_produit_3">
+>>>>>>> origin/gestionAmbulance
     <property name="geometry">
      <rect>
       <x>360</x>
       <y>80</y>
+<<<<<<< HEAD
       <width>231</width>
+=======
+      <width>211</width>
+>>>>>>> origin/gestionAmbulance
       <height>61</height>
      </rect>
     </property>
@@ -113,12 +154,21 @@ text-align:center;</string>
      <string>Gestion des produits</string>
     </property>
    </widget>
+<<<<<<< HEAD
    <widget class="QPushButton" name="pushButton_client_2">
     <property name="geometry">
      <rect>
       <x>360</x>
       <y>160</y>
       <width>231</width>
+=======
+   <widget class="QPushButton" name="pushButton_client_3">
+    <property name="geometry">
+     <rect>
+      <x>360</x>
+      <y>240</y>
+      <width>201</width>
+>>>>>>> origin/gestionAmbulance
       <height>61</height>
      </rect>
     </property>
@@ -135,12 +185,43 @@ text-align:center;</string>
      <string>Gestion des patients</string>
     </property>
    </widget>
+<<<<<<< HEAD
   </widget>
   <widget class="QWidget" name="widget" native="true">
    <property name="geometry">
     <rect>
      <x>10</x>
      <y>0</y>
+=======
+   <widget class="QPushButton" name="pushButton_employees_2">
+    <property name="geometry">
+     <rect>
+      <x>360</x>
+      <y>160</y>
+      <width>221</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 75 8pt &quot;MS Shell Dlg 2&quot;;
+border-radius: 20px;
+color: black;
+padding: 0 8px;
+background: #E1E1E1;
+font: bold, &quot;Comic Sans MS&quot;;;
+text-align:center;</string>
+    </property>
+    <property name="text">
+     <string>Gestion des ambulances</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QWidget" name="widget_3" native="true">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+>>>>>>> origin/gestionAmbulance
      <width>251</width>
      <height>731</height>
     </rect>
@@ -149,7 +230,11 @@ text-align:center;</string>
     <string notr="true">
 background-color: rgb(163, 163, 163);</string>
    </property>
+<<<<<<< HEAD
    <widget class="QPushButton" name="pushButton">
+=======
+   <widget class="QPushButton" name="pushButton_2">
+>>>>>>> origin/gestionAmbulance
     <property name="geometry">
      <rect>
       <x>10</x>
@@ -159,13 +244,21 @@ background-color: rgb(163, 163, 163);</string>
      </rect>
     </property>
     <property name="styleSheet">
+<<<<<<< HEAD
      <string notr="true">background-image: url(:/Bureau/image/home (1).svg);</string>
+=======
+     <string notr="true">background-image: url(:/image/home (1).svg);</string>
+>>>>>>> origin/gestionAmbulance
     </property>
     <property name="text">
      <string/>
     </property>
    </widget>
+<<<<<<< HEAD
    <widget class="QPushButton" name="pushButton_5">
+=======
+   <widget class="QPushButton" name="pushButton_10">
+>>>>>>> origin/gestionAmbulance
     <property name="geometry">
      <rect>
       <x>70</x>
@@ -187,7 +280,11 @@ text-align:center;</string>
      <string>ACCUEIL</string>
     </property>
    </widget>
+<<<<<<< HEAD
    <widget class="QPushButton" name="pushButton_4">
+=======
+   <widget class="QPushButton" name="pushButton_11">
+>>>>>>> origin/gestionAmbulance
     <property name="geometry">
      <rect>
       <x>10</x>
@@ -197,13 +294,21 @@ text-align:center;</string>
      </rect>
     </property>
     <property name="styleSheet">
+<<<<<<< HEAD
      <string notr="true">background-image: url(:/Bureau/image/align-justify.svg);</string>
+=======
+     <string notr="true">background-image: url(:/image/align-justify.svg);</string>
+>>>>>>> origin/gestionAmbulance
     </property>
     <property name="text">
      <string/>
     </property>
    </widget>
+<<<<<<< HEAD
    <widget class="QPushButton" name="pushButton_6">
+=======
+   <widget class="QPushButton" name="pushButton_12">
+>>>>>>> origin/gestionAmbulance
     <property name="geometry">
      <rect>
       <x>70</x>
@@ -225,7 +330,11 @@ text-align:center;</string>
      <string>TACHE</string>
     </property>
    </widget>
+<<<<<<< HEAD
    <widget class="QPushButton" name="pushButton_7">
+=======
+   <widget class="QPushButton" name="pushButton_13">
+>>>>>>> origin/gestionAmbulance
     <property name="geometry">
      <rect>
       <x>70</x>
@@ -247,7 +356,11 @@ text-align:center;</string>
      <string>PARAMETRE</string>
     </property>
    </widget>
+<<<<<<< HEAD
    <widget class="QPushButton" name="pushButton_8">
+=======
+   <widget class="QPushButton" name="pushButton_14">
+>>>>>>> origin/gestionAmbulance
     <property name="geometry">
      <rect>
       <x>10</x>
@@ -257,13 +370,21 @@ text-align:center;</string>
      </rect>
     </property>
     <property name="styleSheet">
+<<<<<<< HEAD
      <string notr="true">background-image: url(:/Bureau/image/settings.svg);</string>
+=======
+     <string notr="true">background-image: url(:/image/settings.svg);</string>
+>>>>>>> origin/gestionAmbulance
     </property>
     <property name="text">
      <string/>
     </property>
    </widget>
+<<<<<<< HEAD
    <widget class="QPushButton" name="pushButton_9">
+=======
+   <widget class="QPushButton" name="pushButton_15">
+>>>>>>> origin/gestionAmbulance
     <property name="geometry">
      <rect>
       <x>50</x>

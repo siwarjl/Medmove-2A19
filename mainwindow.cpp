@@ -1,3 +1,4 @@
+<<<<<<< HEAD
  #include "mainwindow.h"
 #include "ui_mainwindow.h"
 #include "employe.h"
@@ -6,11 +7,18 @@
 #include "arduino.h"
 #include "ard.h"
 
+=======
+#include "mainwindow.h"
+#include "ui_mainwindow.h"
+#include "ambulance.h"
+#include "tache.h"
+>>>>>>> origin/gestionAmbulance
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
+<<<<<<< HEAD
     int ret=A.connect_arduino(); // lancer la connexion à arduino
     switch(ret){
     case(0):qDebug()<< "arduino is available and connected to : "<< A.getarduino_port_name();
@@ -27,6 +35,10 @@ MainWindow::MainWindow(QWidget *parent)
 
 
 
+=======
+}
+
+>>>>>>> origin/gestionAmbulance
 MainWindow::~MainWindow()
 {
     delete ui;
@@ -35,6 +47,7 @@ MainWindow::~MainWindow()
 
 
 
+<<<<<<< HEAD
 void MainWindow::on_pushButton_17_clicked()
 { auth a ;
     hide ();
@@ -86,4 +99,20 @@ void MainWindow::on_pushButton_24_clicked()
             QMessageBox::warning(this, "Erreur", "Une erreur est survenue lors de l'ajout de l'enregistrement !");
         }   ui->tableView->setModel( a.afficher());
 
+=======
+
+void MainWindow::on_pushButton_11_clicked()
+{
+    tache T ;
+    hide();
+    T.exec();
+}
+
+
+void MainWindow::on_pushButton_2_clicked()
+{
+    MainWindow *mainWindow = new MainWindow();
+       hide();
+          mainWindow->show();
+>>>>>>> origin/gestionAmbulance
 }

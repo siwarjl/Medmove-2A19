@@ -16,6 +16,7 @@ public:
     ~tache();
 
 private slots:
+<<<<<<< HEAD
     void on_pushButton_clicked();
 
     void on_pushButton_employees_4_clicked();
@@ -26,6 +27,15 @@ private slots:
 
 private:
     Ui::tache *ui;
+=======
+    void on_pushButton_employees_2_clicked();
+
+    void on_pushButton_2_clicked();
+
+private:
+    Ui::tache *ui;
+
+>>>>>>> origin/gestionAmbulance
 };
 
 #endif // TACHE_H
