@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1472</width>
+    <height>753</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-image: url(:/C:/Ahmed_Bejaoui_1A19_G1/projetf/image/homeee.png);</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QWidget" name="widget_3" native="true">
+    <property name="geometry">
+     <rect>
+      <x>-10</x>
+      <y>0</y>
+      <width>251</width>
+      <height>761</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(163, 163, 163);</string>
+    </property>
+    <widget class="QPushButton" name="pushButton_2">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>170</y>
+       <width>51</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-image: url(:/Ahmed_Bejaoui_1A19_G1/projetf/image/home (1).svg);</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_10">
+     <property name="geometry">
+      <rect>
+       <x>70</x>
+       <y>160</y>
+       <width>101</width>
+       <height>71</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border-radius: 30px;
+
+color: black;
+padding: 0 8px;
+background-color: rgb(163, 163, 163);
+font: bold, &quot;Comic Sans MS&quot;;;
+text-align:center;</string>
+     </property>
+     <property name="text">
+      <string>ACCUEIL</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_11">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>260</y>
+       <width>51</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-image: url(:/Ahmed_Bejaoui_1A19_G1/projetf/image/align-justify.svg);</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_12">
+     <property name="geometry">
+      <rect>
+       <x>70</x>
+       <y>250</y>
+       <width>101</width>
+       <height>71</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border-radius: 30px;
+
+color: black;
+padding: 0 8px;
+background-color: rgb(163, 163, 163);
+font: bold, &quot;Comic Sans MS&quot;;;
+text-align:center;</string>
+     </property>
+     <property name="text">
+      <string>TACHE</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_13">
+     <property name="geometry">
+      <rect>
+       <x>70</x>
+       <y>330</y>
+       <width>101</width>
+       <height>71</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border-radius: 30px;
+
+color: black;
+padding: 0 8px;
+background-color: rgb(163, 163, 163);
+font: bold, &quot;Comic Sans MS&quot;;;
+text-align:center;</string>
+     </property>
+     <property name="text">
+      <string>PARAMETRE</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_14">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>340</y>
+       <width>51</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-image: url(:/Ahmed_Bejaoui_1A19_G1/projetf/image/settings.svg);</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_15">
+     <property name="geometry">
+      <rect>
+       <x>60</x>
+       <y>10</y>
+       <width>151</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 75 8pt &quot;MS Shell Dlg 2&quot;;
+border-radius: 20px;
+color: black;
+padding: 0 8px;
+background: #ebc5c5;
+font: bold, &quot;Comic Sans MS&quot;;;
+text-align:center;</string>
+     </property>
+     <property name="text">
+      <string>MEDMOVE</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_16">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>610</y>
+       <width>71</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border-radius: 30px;
+
+color: black;
+padding: 0 8px;
+font: bold, &quot;Comic Sans MS&quot;;;
+background-color: rgb(188, 24, 27);
+text-align:center;</string>
+     </property>
+     <property name="text">
+      <string>Français</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_17">
+     <property name="geometry">
+      <rect>
+       <x>90</x>
+       <y>610</y>
+       <width>71</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border-radius: 30px;
+background-color: rgb(255, 69, 72);
+
+color: black;
+padding: 0 8px;
+font: bold, &quot;Comic Sans MS&quot;;;
+text-align:center;</string>
+     </property>
+     <property name="text">
+      <string>English</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="chatbox">
+     <property name="geometry">
+      <rect>
+       <x>50</x>
+       <y>480</y>
+       <width>101</width>
+       <height>71</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border-radius: 30px;
+
+color: black;
+padding: 0 8px;
+background-color: rgb(163, 163, 163);
+font: bold, &quot;Comic Sans MS&quot;;;
+text-align:center;</string>
+     </property>
+     <property name="text">
+      <string>chatbox</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton">
+     <property name="geometry">
+      <rect>
+       <x>80</x>
+       <y>110</y>
+       <width>93</width>
+       <height>28</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>mail</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="widget" native="true">
+    <property name="geometry">
+     <rect>
+      <x>240</x>
+      <y>0</y>
+      <width>1231</width>
+      <height>731</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-image: url(:/Ahmed_Bejaoui_1A19_G1/projetf/image/homeee.png);</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1472</width>
+     <height>26</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

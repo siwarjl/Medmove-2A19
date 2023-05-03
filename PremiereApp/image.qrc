@@ -1,0 +1,39 @@
+<RCC>
+    <qresource prefix="/">
+        <file>../../../../Ahmed_Bejaoui_1A19_G1/projetf/image/alert-circle.svg</file>
+        <file>../../../../Ahmed_Bejaoui_1A19_G1/projetf/image/align-justify.svg</file>
+        <file>../../../../Ahmed_Bejaoui_1A19_G1/projetf/image/arrow-down.svg</file>
+        <file>../../../../Ahmed_Bejaoui_1A19_G1/projetf/image/arrow-left (1).svg</file>
+        <file>../../../../Ahmed_Bejaoui_1A19_G1/projetf/image/arrow-left.svg</file>
+        <file>../../../../Ahmed_Bejaoui_1A19_G1/projetf/image/arrow-left-circle.svg</file>
+        <file>../../../../Ahmed_Bejaoui_1A19_G1/projetf/image/arrow-right (1).svg</file>
+        <file>../../../../Ahmed_Bejaoui_1A19_G1/projetf/image/arrow-right.svg</file>
+        <file>../../../../Ahmed_Bejaoui_1A19_G1/projetf/image/arrow-up.svg</file>
+        <file>../../../../Ahmed_Bejaoui_1A19_G1/projetf/image/bar-chart-2 (1).svg</file>
+        <file>../../../../Ahmed_Bejaoui_1A19_G1/projetf/image/bar-chart-2.svg</file>
+        <file>../../../../Ahmed_Bejaoui_1A19_G1/projetf/image/bell (1).svg</file>
+        <file>../../../../Ahmed_Bejaoui_1A19_G1/projetf/image/bell (2).svg</file>
+        <file>../../../../Ahmed_Bejaoui_1A19_G1/projetf/image/bell.svg</file>
+        <file>../../../../Ahmed_Bejaoui_1A19_G1/projetf/image/file-text (1).svg</file>
+        <file>../../../../Ahmed_Bejaoui_1A19_G1/projetf/image/file-text (2).svg</file>
+        <file>../../../../Ahmed_Bejaoui_1A19_G1/projetf/image/file-text.svg</file>
+        <file>../../../../Ahmed_Bejaoui_1A19_G1/projetf/image/home (1).svg</file>
+        <file>../../../../Ahmed_Bejaoui_1A19_G1/projetf/image/home.png</file>
+        <file>../../../../Ahmed_Bejaoui_1A19_G1/projetf/image/home.svg</file>
+        <file>../../../../Ahmed_Bejaoui_1A19_G1/projetf/image/homeee.png</file>
+        <file>../../../../Ahmed_Bejaoui_1A19_G1/projetf/image/layers (1).svg</file>
+        <file>../../../../Ahmed_Bejaoui_1A19_G1/projetf/image/layers.svg</file>
+        <file>../../../../Ahmed_Bejaoui_1A19_G1/projetf/image/more-horizontal (1).svg</file>
+        <file>../../../../Ahmed_Bejaoui_1A19_G1/projetf/image/more-horizontal.svg</file>
+        <file>../../../../Ahmed_Bejaoui_1A19_G1/projetf/image/Sans titre-1.png</file>
+        <file>../../../../Ahmed_Bejaoui_1A19_G1/projetf/image/save (1).svg</file>
+        <file>../../../../Ahmed_Bejaoui_1A19_G1/projetf/image/save.svg</file>
+        <file>../../../../Ahmed_Bejaoui_1A19_G1/projetf/image/search (1).svg</file>
+        <file>../../../../Ahmed_Bejaoui_1A19_G1/projetf/image/search.svg</file>
+        <file>../../../../Ahmed_Bejaoui_1A19_G1/projetf/image/settings.svg</file>
+        <file>../../../../Ahmed_Bejaoui_1A19_G1/projetf/image/trash-2 (1).svg</file>
+        <file>../../../../Ahmed_Bejaoui_1A19_G1/projetf/image/trash-2.svg</file>
+        <file>../../../../Ahmed_Bejaoui_1A19_G1/projetf/image/user (1).svg</file>
+        <file>../../../../Ahmed_Bejaoui_1A19_G1/projetf/image/user.svg</file>
+    </qresource>
+</RCC>
